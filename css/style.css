@@ -364,6 +364,19 @@ footer h4{
 /* Footer End */
 
 /* About Page */
+#ab-cont1{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.ab-vision{
+    background-color: #eeeeee;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    color: #000000;
+    text-align: center;
+    line-height: 90px;
+}
 .card-body h4{
     font-weight: 800;
 }
@@ -395,6 +408,27 @@ footer h4{
     color: blue;
 }
 /* about Page End*/
+
+/* products */
+.gallery{
+    background: #dbddf1;
+    padding: 80px 0;;
+}
+.pd-img{
+    background: #000000;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 15px #000000;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+#gallery-modal .modal-img{
+    width: 100%;
+}
+.pd-img:hover{
+    transform: scale(1.1);
+}
+/* products end */
 
 /* Facilities Page */
 #fac-types{
@@ -432,4 +466,47 @@ footer h4{
     font-size: 25px;
 }
 /* Facilities Page End */
+/* contacts */
+.c-building-icon{
+    fill: #000000;
+    height: 18px;
+    margin-right: .3em;
+}
+.c-location-icon{
+    fill: #000000;
+    height: 18px;
+    margin-right: .3em;
+}
+.c-phone-icon{
+    fill: #000000;
+    height: 18px;
+    margin-right: .3em;
+}
+.c-email-icon{
+    fill: #000000;
+    height: 18px;
+    margin-right: .3em;
+}
+#c-fo-mail{
+    color: #000000;
+    text-decoration: none;
+}
+#c-fo-tel{
+    color: #000000;
+    text-decoration: none;
+}
+#c-fo-address{
+    color: #000000;
+    text-decoration: none;
+}
+#c-fo-address:hover{
+    color: #F05E2F;
+}
+#c-fo-tel:hover{
+    color: #089356;
+}
+#c-fo-mail:hover{
+    color: #F05E2F;
+}
 
+/* contacts end */
