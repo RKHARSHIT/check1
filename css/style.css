@@ -56,11 +56,11 @@ button.navbar-toggler{
 /* End Navbar */
 
 /* Main Start*/
-.carousel-item{
+.m-carousel-item{
     position: relative;
     z-index: 1;
 }
-.carousel-item:before{
+.m-carousel-item:before{
     content: '';
     position: absolute;
     left: 0;
@@ -70,7 +70,7 @@ button.navbar-toggler{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
-.carousel-item .container{
+.m-carousel-item .container{
     position: absolute;
     Left: 50%;
     top: 50%;
@@ -79,27 +79,27 @@ button.navbar-toggler{
     display: flex;
     flex-direction: column;
 }
-.carousel-item h2{
+.m-carousel-item h2{
     font-size: 80px;
     color: #ffffff;
     margin: 0 0 10px;
     opacity: 0;
     font-family: Fira Sans;
 }
-.carousel-item p{
+.m-carousel-item p{
     font-size: 30px;
     color: #b0b0b0;
     margin: 0;
     opacity: 0;
     font-family: Fira Sans;
 }
-.carousel-item img{
+.m-carousel-item img{
     filter: brightness(30%);
 }
-.carousel-item.active h2{
+.m-carousel-item.active h2{
     animation: fadeInLeft 0.5s ease forwards;
 }
-.carousel-item.active p{
+.m-carousel-item.active p{
     animation: fadeInRight 0.5s ease forwards;
 }
 @keyframes fadeInLeft{
@@ -151,16 +151,16 @@ button.navbar-toggler{
         width: 207px; 
         height: 68px
     }  
-    .carousel-item{
+    .m-carousel-item{
         min-height: 250px;
     }
-    .carousel-item img{
+    .m-carousel-item img{
         min-height: 250px;
     }
-    .carousel-item h2{
+    .m-carousel-item h2{
         font-size: 40px;
     }
-    .carousel-item p{
+    .m-carousel-item p{
         font-size: 12px;
     }  
     #fac-img{
@@ -177,16 +177,16 @@ button.navbar-toggler{
         width: 237px; 
         height: 72px
     }
-    .carousel-item{
+    .m-carousel-item{
         min-height: 250px;
     }
-    .carousel-item img{
+    .m-carousel-item img{
         min-height: 250px;
     }
-    .carousel-item h2{
+    .m-carousel-item h2{
         font-size: 40px;
     }
-    .carousel-item p{
+    .m-carousel-item p{
         font-size: 12px;
     }
     #ab-row{
@@ -199,16 +199,16 @@ button.navbar-toggler{
 }
 /* Small Devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .carousel-item{
+    .m-carousel-item{
         min-height: 305px;
     }
-    .carousel-item img{
+    .m-carousel-item img{
         min-height: 305px;
     }
-    .carousel-item h2{
+    .m-carousel-item h2{
         font-size: 60px;
     }
-    .carousel-item p{
+    .m-carousel-item p{
         font-size: 18px;
     }
     #ab-row{
@@ -227,10 +227,10 @@ button.navbar-toggler{
     #fo-info, #fo-Qlinks, #fo-Qlinks2, #map{
         text-align: start;
     }
-    .carousel-item{
+    .m-carousel-item{
         min-height: 370px;
     }
-    .carousel-item img{
+    .m-carousel-item img{
         min-height: 370px;
     }
     #ab-row{
@@ -368,7 +368,7 @@ footer h4{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.ab-vision{
+.ab-goal{
     background-color: #eeeeee;
     border-radius: 50%;
     height: 90px;
@@ -376,6 +376,9 @@ footer h4{
     color: #000000;
     text-align: center;
     line-height: 90px;
+}
+#d-vision, #d-mission{
+    background: #00004d;
 }
 .card-body h4{
     font-weight: 800;
@@ -410,11 +413,32 @@ footer h4{
 /* about Page End*/
 
 /* products */
-.gallery{
-    background: #dbddf1;
-    padding: 80px 0;;
+#c-prod{
+    background: #ffffff;
+    padding: 20px 0 20px 0;;
 }
-.pd-img{
+#e-prod{
+    background: #ffffff;
+    padding: 20px 0 20px 0;;
+}
+#p-prod{
+    background: #ffffff;
+    padding: 20px 0 80px 0;;
+}
+.p-head{
+    font-family: Fira sans;
+    color: #ff4400;
+    background-color: #00004d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 40px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 9px 2px #000000;
+}
+.pd-img, .c-pd-img{
     background: #000000;
     padding: 10px;
     width: 100%;
@@ -422,11 +446,24 @@ footer h4{
     cursor: pointer;
     transition: transform .2s ease;
 }
+.c-pd-img .pd-img{
+    padding: 0;
+}
 #gallery-modal .modal-img{
     width: 100%;
 }
-.pd-img:hover{
+.pd-img:hover, .c-pd-img:hover{
     transform: scale(1.1);
+}
+.c-pd-img:hover .pd-img:hover{
+    transform: none;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 30px;
+    background-color: #000000;
+    background-size: 100%, 100%;
+    border: 2px solid black;
 }
 /* products end */
 
