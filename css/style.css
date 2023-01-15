@@ -3,7 +3,7 @@ body{
     color: black;
     background-color: #ffffff;
     font-family: PT serif;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 /* Navbar */
@@ -126,23 +126,185 @@ button.navbar-toggler{
     font-size: 60px;
     font-family: Fira Sans;
     font-weight: 900;
-    color: #F05E2F;
+    color: #ff4500;
 }
 #home-intro{
     color: #00004d;
-    font-weight: 600;
+    font-weight: 700;
 }
-
+#products{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 #cat-head{
-    font-size: 40px;
+    color: #ff4500;
+    margin-bottom: 10px;
+    font-size: 50px;
     font-family: Fira Sans;
     font-weight: 900;
     text-align: center;
 }
+#elementdivider{
+    display: flex;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+#divider{
+    width: 15%;
+    margin: 0 auto;
+    border-bottom: 4px solid #00004d;
+}
 #card-props{
-    box-shadow: 0 6px 6px 2px #565656;
+    box-shadow: 0 5px 9px 2px #000000;
     border: #000000 solid 2px;
 }
+/* expertise section */
+#expertise{
+    background: #2b2b2b;
+}
+.sec-head{
+    color: #ffffff;
+    font-family: Fira Sans;
+    padding: 25px 0;
+}
+.sec-head h1{
+    font-size: 50px;
+}
+.exp-div{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.exp-box{
+    width: 100%;
+    position: relative;
+}
+.exp-cont{
+    padding: 1em;
+    border: 2px #ffffff solid;
+    border-radius: 25px;
+}
+.exp-head{
+    font-family: Fira Sans;
+    color: #ff4500;
+}
+.exp-cont p{
+    color: #ffffff;
+}
+/* expertise section end */
+/* objective section */
+#obj-cont{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#obj-head{
+    font-family: Fira Sans;
+    color: #ff4500;
+    font-size: 50px;
+    margin-bottom: 24px;
+    padding-left: 0.5em;
+    border-left: 4px solid #ff4500;
+}
+.revealx{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}  
+.revealx.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+#obj-head h1{
+    line-height: 1.5em;
+}
+#obj-des{
+    color: #00004d;
+    font-weight: 600;
+}
+#process{
+    background: #ff4500;
+}
+.process-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#st1,#st2{
+    margin-top: 40px;
+}
+.step-img{
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.step-cont{
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: Fira Sans;
+    color: #ffffff;
+} 
+/* objective section end */
+/* innovation section */
+#innovation{
+    background-color: #ffffff;
+    background-image: url("https://lamdacomponents.com/wp-content/uploads/2021/07/1366X700.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#inn-div{
+    background-color: #00000087;
+    height: 100%;
+    width: 100%;
+}
+#inn-div .container{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 400px;
+    max-width: 1302px;
+}
+#topos{
+    display: flex;
+    width: 100%;
+}
+#topos .row{
+    padding: 30px;
+    width: 100%;
+}
+.inn-cont{
+    color: #ffffff;
+}
+#inn-head{
+    margin: 30px 0;
+    font-family: Fira Sans;
+    font-size: 50px;
+    padding-left: 0.5em;
+    border-left: 4px solid #ff4500;
+}
+#btn-col{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 250px;
+}
+#contact-btn{
+    font-family: Roboto Slab;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    width: fit-content;
+    background-color: #ff4500;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/* innovation section end*/ 
 /* Main End */
 /*Media Queries Start */
 /* extra extra small devices */
@@ -166,13 +328,10 @@ button.navbar-toggler{
     #fac-img{
         max-width: 250px;
     }
-    #ab-row{
-        padding: 0 12px;
-        margin: 10px;
-    }
+    
 }
 /* Extra small devices */
-@media (min-width: 320.99px) and (max-width: 575.99px) {
+@media (min-width: 320.99px) and (max-width: 575.98px) {
     #logoimg{
         width: 237px; 
         height: 72px
@@ -189,10 +348,7 @@ button.navbar-toggler{
     .m-carousel-item p{
         font-size: 12px;
     }
-    #ab-row{
-        padding: 0 25px;
-        margin: 20px;
-    }
+    
     #fac-img{
         max-width: 275px;
     }
@@ -211,10 +367,7 @@ button.navbar-toggler{
     .m-carousel-item p{
         font-size: 18px;
     }
-    #ab-row{
-        padding: 0 60px;
-        margin: 50px;
-    }
+    
     #fac-img{
         max-width: 275px;
     }
@@ -233,10 +386,7 @@ button.navbar-toggler{
     .m-carousel-item img{
         min-height: 370px;
     }
-    #ab-row{
-        padding: 0 60px;
-        margin: 50px;
-    }
+    
     #fac-img{
         max-width: 280px;
     }
@@ -246,10 +396,7 @@ button.navbar-toggler{
     #fo-info, #fo-Qlinks, #fo-Qlinks2, #map{
         text-align: start;
     }
-    #ab-row{
-        padding: 0 25px;
-        margin: 20px;
-    }
+    
     #ab-cat1{
         padding: 0px 20px 0px 110px;
     }
@@ -265,10 +412,7 @@ button.navbar-toggler{
     #fo-info, #fo-Qlinks, #fo-Qlinks2, #map{
         text-align: start;
     }
-    #ab-row{
-        padding: 0 25px;
-        margin: 20px;
-    }
+    
     #ab-cat1{
         padding: 0px 20px 0px 200px;
     }
@@ -282,6 +426,16 @@ button.navbar-toggler{
 
 footer h4{
     font-family: Fira Sans;
+}
+.revealy{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}  
+.revealy.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 .building-icon{
     fill: #F05E2F;
@@ -427,7 +581,7 @@ footer h4{
 }
 .p-head{
     font-family: Fira sans;
-    color: #ff4400;
+    color: #ff4500;
     background-color: #00004d;
     display: flex;
     align-items: center;
@@ -504,6 +658,20 @@ footer h4{
 }
 /* Facilities Page End */
 /* contacts */
+#an-contact .container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+#contact-info{
+    background-color: #ffffffa0;
+    max-width: 550px;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 2px #000000;
+}
 .c-building-icon{
     fill: #000000;
     height: 18px;
