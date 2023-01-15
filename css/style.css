@@ -252,7 +252,6 @@ button.navbar-toggler{
 /* innovation section */
 #innovation{
     background-color: #ffffff;
-    background-image: url("https://lamdacomponents.com/wp-content/uploads/2021/07/1366X700.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -273,13 +272,21 @@ button.navbar-toggler{
 #topos{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 #topos .row{
     padding: 30px;
     width: 100%;
 }
 .inn-cont{
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
+}
+.row > .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #inn-head{
     margin: 30px 0;
@@ -287,12 +294,6 @@ button.navbar-toggler{
     font-size: 50px;
     padding-left: 0.5em;
     border-left: 4px solid #ff4500;
-}
-#btn-col{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    padding-left: 250px;
 }
 #contact-btn{
     font-family: Roboto Slab;
@@ -328,7 +329,6 @@ button.navbar-toggler{
     #fac-img{
         max-width: 250px;
     }
-    
 }
 /* Extra small devices */
 @media (min-width: 320.99px) and (max-width: 575.98px) {
@@ -390,6 +390,7 @@ button.navbar-toggler{
     #fac-img{
         max-width: 280px;
     }
+    
 }
 /*Large Devies*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -406,6 +407,7 @@ button.navbar-toggler{
     #fac-img{
         max-width: 275px;
     }
+    
 }
 /*Extra large device*/
 @media (min-width: 1200px){
@@ -419,6 +421,7 @@ button.navbar-toggler{
     #ab-cat2{
         padding: 0px 200px 0px 20px;
     }
+    
 }
 
 /*media Queries End*/
@@ -537,12 +540,7 @@ footer h4{
 .card-body h4{
     font-weight: 800;
 }
-.d-phone-icon{
-    fill: #000000;
-    height: 18px;
-    margin-right: .3em;
-}
-.d-email-icon{
+.d-phone-icon, .d-email-icon{
     fill: #000000;
     height: 18px;
     margin-right: .3em;
@@ -550,18 +548,11 @@ footer h4{
 #clist li{
     border: none;
 }
-#d-tel{
+#d-tel, .d-mail{
     color: #000000;
     text-decoration: none;
 }
-#d-tel:hover{
-    color: blue;
-}
-.d-mail{
-    color: #000000;
-    text-decoration: none;
-}
-.d-mail:hover{
+#d-tel:hover, .d-mail:hover{
     color: blue;
 }
 /* about Page End*/
@@ -672,46 +663,20 @@ footer h4{
     border-radius: 10px;
     box-shadow: 4px 4px 9px 2px #000000;
 }
-.c-building-icon{
+.c-building-icon, .c-location-icon, .c-phone-icon, .c-email-icon{
     fill: #000000;
     height: 18px;
     margin-right: .3em;
 }
-.c-location-icon{
-    fill: #000000;
-    height: 18px;
-    margin-right: .3em;
-}
-.c-phone-icon{
-    fill: #000000;
-    height: 18px;
-    margin-right: .3em;
-}
-.c-email-icon{
-    fill: #000000;
-    height: 18px;
-    margin-right: .3em;
-}
-#c-fo-mail{
+
+#c-fo-mail, #c-fo-tel, #c-fo-address{
     color: #000000;
     text-decoration: none;
 }
-#c-fo-tel{
-    color: #000000;
-    text-decoration: none;
+
+#c-fo-address:hover, #c-fo-tel:hover, #c-fo-mail:hover{
+    color: #0000ff;
 }
-#c-fo-address{
-    color: #000000;
-    text-decoration: none;
-}
-#c-fo-address:hover{
-    color: #F05E2F;
-}
-#c-fo-tel:hover{
-    color: #089356;
-}
-#c-fo-mail:hover{
-    color: #F05E2F;
-}
+
 
 /* contacts end */
