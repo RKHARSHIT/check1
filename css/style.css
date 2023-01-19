@@ -736,7 +736,11 @@ footer h4 {
     border: 2px solid #ffffff;
     width: 318px;
 }
-
+#fac-row h2{
+    color: #ff4500;
+    font-weight: 700;
+    font-family: Fira Sans;
+}
 #fac-cat a {
     text-decoration: none;
     display: flex;
