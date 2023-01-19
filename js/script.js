@@ -1,13 +1,3 @@
-$(function () {// Same as document.addEventListner("DOMContentLoaded"...)
-
-    // Same as document.querySelector("#navbarToggle").addEventListener("blur")
-    $(".navbar-toggler").blur(function (event) {
-        var screenWidth = window.innerWidth;
-        if (screenWidth < 992) {
-            $('#navbarNav').collapse('hide');
-        }
-    });
-});
 
 document.addEventListener("click", function (e) {
     if (e.target.classList.contains("pd-img")) {
@@ -17,8 +7,7 @@ document.addEventListener("click", function (e) {
         myModal.show()
     }
 });
-
-function revealx() {
+document.addEventListener("scroll", function () {
     var reveals = document.querySelectorAll(".revealx");
 
     for (var i = 0; i < reveals.length; i++) {
@@ -30,11 +19,8 @@ function revealx() {
             reveals[i].classList.add("active");
         }
     }
-}
-
-window.addEventListener("scroll", revealx);
-
-function revealy() {
+});
+document.addEventListener("scroll", function () {
     var reveals = document.querySelectorAll(".revealy");
 
     for (var i = 0; i < reveals.length; i++) {
@@ -46,6 +32,4 @@ function revealy() {
             reveals[i].classList.add("active");
         }
     }
-}
-
-window.addEventListener("scroll", revealy);
+});
