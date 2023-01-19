@@ -180,19 +180,6 @@ button.navbar-toggler {
     text-align: center;
 }
 
-#elementdivider {
-    display: flex;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
-}
-
-#divider {
-    width: 15%;
-    margin: 0 auto;
-    border-bottom: 4px solid #00004d;
-}
-
 #card-props {
     box-shadow: 0 5px 9px 2px #000000;
     border: #000000 solid 2px;
