@@ -207,38 +207,11 @@ button.navbar-toggler {
     color: #ffffff;
     font-family: Fira Sans;
     padding: 25px 0;
+    font-size: 70px;
 }
 
 .sec-head h1 {
     font-size: 70px;
-}
-
-.exp-div {
-    display: flex;
-    padding: 10px;
-    position: relative;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-.exp-box {
-    width: 100%;
-    position: relative;
-}
-
-.exp-cont {
-    padding: 1em;
-    border: 2px #ffffff solid;
-    border-radius: 25px;
-}
-
-.exp-head {
-    font-family: Fira Sans;
-    color: #ff4500;
-}
-
-.exp-cont p {
-    color: #ffffff;
 }
 
 /* expertise section end */
@@ -503,19 +476,19 @@ button.navbar-toggler {
     .dropdown-menu li {
         position: relative;
     }
-    
+
     .dropdown-menu .dropdown-submenu {
         display: none;
         position: absolute;
         left: 100%;
         top: -7px;
     }
-    
+
     .dropdown-menu .dropdown-submenu-left {
         right: 100%;
         left: auto;
     }
-    
+
     .dropdown-menu>li:hover>.dropdown-submenu {
         display: block;
     }
@@ -546,19 +519,19 @@ button.navbar-toggler {
     .dropdown-menu li {
         position: relative;
     }
-    
+
     .dropdown-menu .dropdown-submenu {
         display: none;
         position: absolute;
         left: 100%;
         top: -7px;
     }
-    
+
     .dropdown-menu .dropdown-submenu-left {
         right: 100%;
         left: auto;
     }
-    
+
     .dropdown-menu>li:hover>.dropdown-submenu {
         display: block;
     }
@@ -599,75 +572,30 @@ footer h4 {
     opacity: 1;
 }
 
-.building-icon {
-    fill: #F05E2F;
-    height: 18px;
-    margin-right: .3em;
-}
-
-.location-icon {
-    fill: #089356;
-    height: 18px;
-    margin-right: .3em;
-}
-
-.phone-icon {
-    fill: #F05E2F;
-    height: 18px;
-    margin-right: .3em;
-}
-
+.building-icon,
+.location-icon,
+.phone-icon,
 .email-icon {
-    fill: #089356;
+    fill: #ff4500;
     height: 18px;
     margin-right: .3em;
 }
 
-#fo-mail {
-    color: white;
-    text-decoration: none;
-}
-
-#fo-tel {
-    color: white;
-    text-decoration: none;
-}
-
-#fo-address {
-    color: white;
-    text-decoration: none;
-}
-
-#fo-address:hover {
-    color: #F05E2F;
-}
-
-#fo-tel:hover {
-    color: #089356;
-}
-
-#fo-mail:hover {
-    color: #F05E2F;
-}
-
-#fo-Qlinks a {
-    color: white;
-    text-decoration: none;
-}
-
-#fo-Qlinks a:hover {
-    color: #F05E2F;
-    text-decoration: none;
-}
-
+#fo-mail,
+#fo-tel,
+#fo-address,
+#fo-Qlinks a,
 #fo-Qlinks2 a {
     color: white;
     text-decoration: none;
 }
 
+#fo-address:hover,
+#fo-mail:hover,
+#fo-tel:hover,
+#fo-Qlinks a:hover,
 #fo-Qlinks2 a:hover {
-    color: #F05E2F;
-    text-decoration: none;
+    color: #ff4500;
 }
 
 .insta-icon {
@@ -822,15 +750,7 @@ footer h4 {
     width: 318px;
 }
 
-#fac-row h2 {
-    text-align: center;
-    font-size: 40px;
-    font-family: Fira Sans;
-    font-weight: bold;
-    color: #ff4500;
-}
-
-#fac-cat a{
+#fac-cat a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
