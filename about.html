@@ -23,8 +23,7 @@
         <nav class="navbar navbar-expand-lg" id="header-nav">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png" alt="AUTONEXT CASTING PRIVATE LIMITED" width="318" height="96"
-                        id="logoimg">
+                    <img src="images/logo.png" alt="AUTONEXT CASTING PRIVATE LIMITED" id="logoimg">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,17 +32,53 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="justify-content-end">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
-                            <li class="nav-item active list-items">
-                                <a href="index.html" class="nav-link">Home</a>
+                            <li class="nav-item active list-items" id="nav-first">
+                                <a href="index.html" class="nav-link active">Home</a>
                             </li>
-                            <li class="nav-item list-items" id="nav-items">
+                            <li class="nav-item list-items"  id="list-items">
                                 <a href="about.html" class="nav-link active">About Us</a>
                             </li>
-                            <li class="nav-item list-items">
-                                <a href="products.html" class="nav-link">Products</a>
+                            <li class="nav-item dropdown list-items">
+                                <a class="nav-link dropdown-toggle" href="#" id="productDropdownMenu" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html#c-prod">Casting</a></li>
+                                    <li><a class="dropdown-item" href="products.html#e-prod">Electroplating</a></li>
+                                    <li><a class="dropdown-item" href="products.html#p-prod">Powder Coating</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item list-items">
-                                <a href="facilities.html" class="nav-link">Facilities</a>
+                            <li class="nav-item dropdown list-items">
+                                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdownMenu" role="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Facilities
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="castingDropdownMenu"
+                                            role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                            aria-expanded="false">Casting</a>
+                                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                                            <li><a class="dropdown-item" href="#">High Pressure Die Casting</a></li>
+                                            <li><a class="dropdown-item" href="#">Low Pressure Die Casting</a></li>
+                                            <li><a class="dropdown-item" href="#">Gravity Die Casting</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#"
+                                            id="electroplatingDropdownMenu" role="button" data-bs-toggle="dropdown"
+                                            data-bs-auto-close="outside" aria-expanded="false">Electroplating</a>
+                                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                                            <li><a class="dropdown-item" href="#">Zinc Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Copper Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Nickel Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Electroless Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Tin Plating</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Powder Coating</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item list-items">
                                 <a href="contact.html" class="nav-link">Contact Us</a>
@@ -59,7 +94,7 @@
     <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
         <div class="carousel-inner">
             <div class="carousel-item active m-carousel-item">
-                <img src="images/machine1.jpg" class="d-block w-100" alt="AUTONEXT CASTING">
+                <img src="images/machine1.png" class="d-block w-100" alt="AUTONEXT CASTING">
                 <div class="container" style="top: 20%; left: 20%; transform: translate(-20%, -20%);">
                     <p style="text-align: left; font-size: 15px;">Home > About Us</p>
                     <h2 style="text-align: left; font-size: 60px;">About</h2>
@@ -77,10 +112,7 @@
 
             <p>The current status of Autonext Casting Private Limited is - Active.</p>
 
-            <p>Details of the last annual general meeting of Autonext Casting Private Limited are not available. The
-                company is yet to submit its first full-year financial statements to the registrar.</p>
-
-            <p>Autonext Casting Private Limited has two directors - Pankaj Chaudhary, Deepak Chaudhary</p>
+            <p>Autonext Casting Private Limited has two directors - Pankaj Chaudhary and Deepak Chaudhary</p>
 
             <p>The Corporate Identification Number (CIN) of Autonext Casting Private Limited is U28990UP2021PTC143124.
                 The
@@ -114,17 +146,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="paralaxb" style="height: 150px; display: flex; justify-content: center; align-items: center;">
+        <h1 id="cat-head" class="revealx">Directors</h1>
+    </div>
+    <div class="container-fluid mt-3">
         <div class="row mb-4" id="ab-row">
-            <h1 id="cat-head" class="revealx">Directors</h1>
-            <div id="elementdivider">
-                <span id="divider"> </span>
-            </div>
             <div class="col-12 col-md-6 col-lg-6 mb-3 mt-3" id="ab-cat1">
                 <div class="card" id="card-props">
                     <img src="images/d1.png" alt="Pankaj Chaudhary" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title">Pankaj Chaudhary</h4>
+                        <h4 class="card-title">Pankaj Chaudhary <h5>(Managing Director)</h5> </h4>
                     </div>
                     <ul class="list-group list-group-flush" id="clist">
                         <li class="list-group-item"><a id="d-tel" href="tel: 9871018734"><svg class="d-phone-icon"
@@ -144,7 +175,7 @@
                 <div class="card" id="card-props">
                     <img src="images/d2.png" alt="Deepak Chaudhary" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title">Deepak Chaudhary</h4>
+                        <h4 class="card-title">Deepak Chaudhary <h5>(Managing Director)</h5></h4>
                     </div>
                     <ul class="list-group list-group-flush" id="clist">
                         <li class="list-group-item"><a id="d-tel" href="tel: 9560822494"><svg class="d-phone-icon"
@@ -267,6 +298,7 @@
     </footer>
     <!--End Footer-->
     <script src="js/jquery2.14.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>

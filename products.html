@@ -21,8 +21,7 @@
         <nav class="navbar navbar-expand-lg" id="header-nav">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
-                    <img src="images/logo.png" alt="AUTONEXT CASTING PRIVATE LIMITED" width="318" height="96"
-                        id="logoimg">
+                    <img src="images/logo.png" alt="AUTONEXT CASTING PRIVATE LIMITED" id="logoimg">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,17 +30,53 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="justify-content-end">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
-                            <li class="nav-item active list-items">
+                            <li class="nav-item active list-items" id="nav-first">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item list-items">
                                 <a href="about.html" class="nav-link">About Us</a>
                             </li>
-                            <li class="nav-item list-items" id="nav-items">
-                                <a href="products.html" class="nav-link active">Products</a>
+                            <li class="nav-item dropdown list-items">
+                                <a class="nav-link active dropdown-toggle" href="#" id="productDropdownMenu" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="products.html#c-prod">Casting</a></li>
+                                    <li><a class="dropdown-item" href="products.html#e-prod">Electroplating</a></li>
+                                    <li><a class="dropdown-item" href="products.html#p-prod">Powder Coating</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item list-items">
-                                <a href="facilities.html" class="nav-link">Facilities</a>
+                            <li class="nav-item dropdown list-items">
+                                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdownMenu" role="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Facilities
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="castingDropdownMenu"
+                                            role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                            aria-expanded="false">Casting</a>
+                                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                                            <li><a class="dropdown-item" href="#">High Pressure Die Casting</a></li>
+                                            <li><a class="dropdown-item" href="#">Low Pressure Die Casting</a></li>
+                                            <li><a class="dropdown-item" href="#">Gravity Die Casting</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-item dropdown-toggle" href="#"
+                                            id="electroplatingDropdownMenu" role="button" data-bs-toggle="dropdown"
+                                            data-bs-auto-close="outside" aria-expanded="false">Electroplating</a>
+                                        <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+                                            <li><a class="dropdown-item" href="#">Zinc Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Copper Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Nickel Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Electroless Plating</a></li>
+                                            <li><a class="dropdown-item" href="#">Tin Plating</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Powder Coating</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item list-items">
                                 <a href="contact.html" class="nav-link">Contact Us</a>
@@ -457,10 +492,9 @@
     </footer>
     <!--End Footer-->
     <script src="js/jquery2.14.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/pd.js"></script>
 </body>
 
 </html>
